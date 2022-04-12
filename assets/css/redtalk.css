@@ -1,0 +1,319 @@
+* {
+  padding: 0px;
+  margin: auto;
+}
+
+body {
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  animation: slide 3s ease-in-out infinite alternate;
+
+  max-width: 100vw;
+  background-attachment: fixed;
+}
+
+header {
+  /* background-image: url(../images/banner.png); */
+  height: 1000px;
+  /* background-size: cover; */
+  /* animation: slide 3s ease-in-out infinite alternate; */
+}
+
+@keyframes slide {
+  0% {
+    background-position: -100px;
+  }
+  50% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 100px;
+  }
+}
+
+.bgcolor {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+#main_nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+}
+
+#logo_redtalk {
+  height: 100px;
+}
+
+#real_nav {
+  width: 500px;
+}
+
+#real_nav ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  place-items: center;
+}
+
+#real_nav a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #bd2640;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 2.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#real_nav a:hover {
+  color: #bd2640;
+  background-color: black;
+}
+
+#banner {
+  position: relative;
+  background: none;
+  margin-top: 100px;
+}
+
+#header_text {
+  width: fit-content;
+  padding: 20px;
+  color: #bd2640;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 90px 0px;
+  position: relative;
+  top: 300px;
+  transition: 2.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#header_text:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.5) rotate(360deg);
+}
+
+#header_text h2 {
+  font-size: 3em;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: none;
+}
+
+#header_text h1 {
+  font-size: 4em;
+  text-align: center;
+  background: none;
+}
+
+#header_text span {
+  color: black;
+  background: none;
+}
+
+section {
+  /* background-image: linear-gradient(90deg, grey, white); */
+}
+
+#under_banner {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+#devises {
+  background-color: #bd2640;
+  width: 75%;
+  height: 250px;
+  padding: 10px;
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0 0 50px;
+}
+
+#devises h1 {
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 3em;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  border: 5px white groove;
+  border-radius: 50px;
+  margin-top: 0px;
+}
+
+#devises div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#devises p {
+  width: 15%;
+  text-align: center;
+  background-color: white;
+  font-size: 2em;
+  font-family: fantasy;
+  border: 5px grey ridge;
+  border-radius: 5px;
+  transition: 2.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#devises p:hover {
+  color: #bd2640;
+  background-color: black;
+}
+
+#under_banner article,
+#under_banner aside {
+  background-color: white;
+  box-shadow: 0 0 50px;
+  border-radius: 15px;
+  transition: 1s;
+  padding: 30px;
+  width: 65%;
+}
+
+#vision {
+  text-align: center;
+  grid-area: 1/1/3/2;
+}
+#under_banner article:hover,
+#under_banner aside:hover {
+  transform: scale(1.1);
+}
+
+#vision span,
+#objectif span {
+  color: #bd2640;
+}
+
+#missions {
+  text-align: justify;
+  grid-area: 1/2/2/3;
+}
+
+#vision,
+#missions h1,
+#strategie h1,
+#activites h1,
+#objectif {
+  font-size: 2em;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+#missions ul,
+#strategie ul,
+#activites ul {
+  list-style-type: square;
+  font-size: 1.2em;
+  color: rgb(51, 51, 51);
+}
+
+#strategie {
+  grid-area: 2/2/3/3;
+}
+
+#activites {
+  grid-area: 3/2/4/3;
+}
+
+#activites a {
+  text-decoration: none;
+  color: #bd2640;
+  font-weight: bolder;
+  transition: 2.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#activites a:hover {
+  color: black;
+}
+
+#objectif {
+  grid-area: 3/1/4/2;
+}
+
+footer {
+  display: grid;
+  grid-gap: 30px;
+  padding: 30px;
+  text-align: justify;
+  height: 300px;
+
+  background-color: white;
+}
+
+footer p,
+footer a,
+.copyrights {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+
+.description {
+  grid-area: 1/1/2/2;
+  width: 75%;
+}
+
+.copyrights {
+  grid-area: 2/1/3/5;
+}
+
+.siege {
+  grid-area: 1/2/2/3;
+}
+
+.contact {
+  grid-area: 1/3/2/4;
+}
+
+.follow-us {
+  grid-area: 1/4/2/5;
+}
+
+.infos {
+  margin: 0;
+  line-height: 75px;
+}
+
+.infos a {
+  text-decoration: none;
+  transition: 2s;
+}
+
+.infos a:hover {
+  color: #bd2640;
+}
+
+.infos ul {
+  list-style-type: none;
+}
+
+.infos li {
+  line-height: 30px;
+}
+
+.contact a {
+  font-size: 1em;
+}
